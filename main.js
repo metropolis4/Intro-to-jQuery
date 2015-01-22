@@ -20,11 +20,11 @@ $('.selected').hover(
   	$(this).removeClass("active").children("span").remove();
   });
 
-  $('a').on("click", function(e) {
+  $('.google').on("click", function(e) {
   	var userInput = confirm("Are you sure you want to leave this page?");
   	if(userInput === false) {
   		e.preventDefault();
-  		$('button').remove();
+  		$('#search').remove();
   	}
   	
   });
@@ -46,6 +46,7 @@ $('.selected').hover(
 		$('.close').click(function() {
 			$('.popup').animate({top: '100%', left: '80%', opacity: '0'}, 600).fadeOut(1000);
 			$('.bigButton').fadeIn(600);
+			$('.navigation').animate({top: '0px'}, 1000);
 	});
 	});
 
