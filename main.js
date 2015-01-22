@@ -33,19 +33,19 @@ $('.selected').hover(
 
   $('.bigButton').click(function() {
 		$('.bigButton').fadeOut(400);
-		
+
 		$('.main-content').append(
 			"<div class='popup'>" +
 				"<h2>hello...</h2>" +
 				"<button class='close buttonMain'><span>goodbye...</span></button>" +
 			"</div>");
 
-		$('.close').hide().delay(400).fadeIn(4000).animate({top: '-150px'}, 2000);
+		$('.close').hide().fadeIn(1500).animate({top: '50px'}, 1500);
 		$('h2').fadeOut(4000);
 
 		$('.close').click(function() {
-		$('.popup').detach();
-		$('.bigButton').fadeIn(600);
+			$('.popup').animate({top: '100%', left: '80%', opacity: '0'}, 600).fadeOut(1000);
+			$('.bigButton').fadeIn(600);
 	});
 	});
 

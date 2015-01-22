@@ -111,6 +111,9 @@ a {
 	height: 60px;
 	text-align: center;
 	line-height: 60px;
+	position: absolute;
+	top: 200px;
+	margin: 0 15%;
 }
 .close span {
 	font-size: 1.5em;
