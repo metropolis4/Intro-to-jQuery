@@ -1,0 +1,46 @@
+/*font-family: 'Share Tech Mono';
+font-family: 'Dancing Script', cursive;*/
+body {
+	background: #14142B;
+}
+button {
+	border: 1px solid #CF6D65;
+	color: #CF6D65;
+	background: #17172C;
+	outline: none;
+}
+button:hover {
+	cursor: pointer;
+	background: #CF6D65;
+	color: #14142B;
+}
+.bigButton {
+	width: 33%;
+	height: 300px;
+	box-shadow: 2px 2px 2px 1px rgba(203, 99, 90, 0.63);
+/*	border-radius: 4px;*/
+	margin: 13% 33%;
+	font-family: 'Dancing Script', cursive;
+	font-size: 6em;
+}
+.close {
+	width: 70%;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+.close span {
+	font-size: 1.5em;
+}
+.popup {
+	width: 33%;
+	height: 300px;
+	position: fixed;
+	top: 19%;
+	left: 33%;
+	color: #CF6D65;
+	text-align: center;
+	line-height: 5;
+	border: 1px solid;
+	font-family: 'Share Tech Mono';
+}
