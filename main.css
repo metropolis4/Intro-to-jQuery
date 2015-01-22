@@ -2,6 +2,11 @@ body {
     font-family: 'Share Tech Mono';
     background: #3e3b36;
 }
+.body2 {
+	background: #14142B;
+}
+
+/*Styles for index.html */
 .userInput {
 	width: 50%;
 	margin: auto;
@@ -14,27 +19,111 @@ input {
 	box-shadow: 0 0 5px #666666;
 	margin: 40px 5px;
 }
-button {
+#list,
+#submit {
 	border: none;
 	background: #009E02;
 	color: #ffffff;
 	margin: 40px 5px;
 	transition: .2s transform, 1s opacity;
-    transform:perspective(800px);
     transform-style:preserve-3d;
+    outline: none;
 }
-button:hover {
+#list:hover,
+#submit:hover {
 	cursor: pointer;
 	background: #007B01;
 }
-button:active {
+#list:active,
+#submit:active {
 	transform:perspective(800px) rotate3d(1, 0, 0, 40deg);
 }
-p {
+.post {
 	background: #d3d3d3;
 	font-size: 1.5em;
 	width: 50%;
 	margin: 10px auto;
 	text-align: center;
 	border-radius: 5px;
+}
+
+/*Styles for index2.html*/
+
+.content {
+	width:300px;
+	height:200px;
+	margin: 15px auto;
+	background: #B1FFEC;
+	color: #FFF4F8FF;
+}
+.active {
+	color: pink;
+}
+span {
+	font-size: 2em;
+}
+#search {
+	border: 1px solid #333333;
+	background: #C5DACF;
+	width: 10%;
+	height: 50px;
+	margin: 40px auto;
+	display: block;
+	transition: .2s transform, 1s opacity;
+	transform-style: preserve-3d;
+}
+#search:hover {
+	cursor: pointer;
+	background: #bbbbbb;
+}
+#search:active {
+	transform: perspective(800px) rotate3d(1, 0, 0, 40deg);
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.2em;
+}
+
+/*Styles for index3.html */
+
+.buttonMain {
+	border: 1px solid #CF6D65;
+	color: #CF6D65;
+	background: #17172C;
+	outline: none;
+}
+.buttonMain:hover {
+	cursor: pointer;
+	background: #CF6D65;
+	color: #14142B;
+}
+.bigButton {
+	width: 33%;
+	height: 300px;
+	box-shadow: 2px 2px 2px 1px rgba(203, 99, 90, 0.63);
+	margin: 13% 33%;
+	font-family: 'Dancing Script', cursive;
+	font-size: 6em;
+}
+.close {
+	width: 70%;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+.close span {
+	font-size: 1.5em;
+}
+.popup {
+	width: 33%;
+	height: 300px;
+	position: fixed;
+	top: 26%;
+	left: 33%;
+	color: #CF6D65;
+	text-align: center;
+	line-height: 5;
+	border: 1px solid;
+	font-family: 'Share Tech Mono';
 }
